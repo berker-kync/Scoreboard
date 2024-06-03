@@ -1,0 +1,73 @@
+@font-face {
+    font-family: "Scoreboard";
+    src: 
+        url("./fonts/CursedTimerUlil.woff2") format("woff2"), /* Modern browsers */
+        url("./fonts/CursedTimerUlil.woff") format("woff"),  /* Most browsers */
+        url("./fonts/CursedTimerUlil.ttf") format("truetype"); /* Older browsers */
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+
+body {
+    margin: 0;
+    background-color: #1B244A;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+
+h3 {
+    color: white;
+    text-align: center;
+    font-size: 45px;
+}
+
+.homeScore, .guestScore {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px; 
+    height: 150px;
+    background-color: black; 
+    color: white;
+    font-size: 48px; 
+    border-radius: 10px; 
+    margin-top: -45px; 
+    transition: background-color 0.3s;
+    font-family: "Scoreboard", cursive;
+}
+
+.homeScore, .guestScore p {
+    color: #F94F6D;
+}
+
+.homeButtons, .guestButtons {
+    display: flex;
+    justify-content: space-around; 
+    gap: 40px;
+    width: 100%;
+    margin: auto;
+    margin-top: 25px;
+    
+
+}
+
+.homeButtons button, .guestButtons button {
+    height: 55px;
+    font-family: "Scoreboard", cursive;
+    font-size: 20px;
+    background-color: transparent;
+    color: #9AABD8;
+    border-radius: 10%;    
+    border-color: #9AABD8;
+    flex-grow: 1;
+}
+
+
+
